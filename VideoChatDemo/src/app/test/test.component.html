@@ -1,0 +1,18 @@
+<!-- <p *ngFor="let i of test"
+[style]="'color:'+ (i>0 ? 'green':'red')"
+>{{(i>0 ? "+"+(i/100 |percent):(i/100 |percent))}}</p>
+
+<td
+[style]="'color:'+ (crypto.quote.USD.percent_change_24h>0 ? 'green':'red')"
+>{{(crypto.quote.USD.percent_change_24h>0 ? "+"+(crypto.quote.USD.percent_change_24h/100 |percent):(crypto.quote.USD.percent_change_24h/100 |percent))}}</td>
+
+<td
+[style]="'color:'+ (crypto.quote.USD.percent_change_7d>0 ? 'green':'red')"
+>{{(crypto.quote.USD.percent_change_7d>0 ? "+"+(crypto.quote.USD.percent_change_7d/100 |percent):(crypto.quote.USD.percent_change_7d/100 |percent))}}</td> -->
+<p *ngFor="let i of crypto">
+{{i.tort}}
+<br>
+
+</p>
+<button>sort</button>
+<button (click)="customSort('.tort')">sort 1</button>
